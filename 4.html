@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		td,th
+		{
+			border: 1px solid black;
+		}
+	</style>
+	<title>Statics</title>
+</head>
+<body>
+<header>
+	<center>
+	<h1>T20 Statics for Indian Team</h1>
+	</center>
+</header>
+<table style="border: 1px solid black">
+	<tr>
+		<th><strong>Over</strong></th>
+		<th><strong>Runs</strong></th>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>40</td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>75</td>
+	</tr>
+	<tr>
+		<td>15</td>
+		<td>140</td>
+	</tr>
+	</table>
+	<br>
+	<h2>Line Chart</h2>
+	<br>
+	<center>
+	<canvas id="myCanvas" width="800" height="400" style="border:1px solid #d3d3d3;">
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.moveTo(0,400);
+			ctx.lineTo(80,300);
+			ctx.stroke();
+			ctx.moveTo(80,300);
+			ctx.lineTo(300,200);
+			ctx.stroke();
+			ctx.moveTo(300,200);
+			ctx.lineTo(420,100);
+			ctx.stroke();
+		</script>
+	</canvas>
+	</center>
+</body>
+</html>
